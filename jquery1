@@ -1,0 +1,21 @@
+$(document).read(function () {
+    $("#id1").click(function () {
+        $("#pid").append("this is my webpag add content");
+        $("#pid2").prepend("thisis my webpage");
+
+    });
+    $("#id22").click(function () {
+        $("#p2").before("hello");
+        $("#id3").after("hello");
+
+    });
+    
+});
+function appendtext(){
+    var  text1 = "<p>iwen</p>"
+    var text2 = $("<p></p>").text("iwen")
+    var text3 = document.createElement("p")
+    text3.innerHTML="acely";
+    $("body").appent(text1,text2,text3);
+
+}
